@@ -1,14 +1,12 @@
-<h1> #new</h1>
-<h2>A user can create a new cocktail</h2>
 
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-
-<%= simple_form_for(@cocktail) do |f| %>
-  <%= f.input :name %>
-  <%= f.submit "add a cocktail", class: "btn btn-primary" %>
-<% end %>
+      <h1>Create a new Cocktails</h1>
+          <%= simple_form_for(@cocktail) do |f| %>
+            <%= f.input :name %>
+            <%= f.submit "add a cocktail", class: "btn btn-primary" %>
+          <% end %>
     </div>
   </div>
 </div>
