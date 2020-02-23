@@ -1,4 +1,11 @@
-<h1> #show</h1>
-<h2>A user can see the details of a given cocktail</h2>
 
 <h2><%= @cocktail.name %></h2>
+
+<%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+
+<h3 class="btn btn-green">
+    <%= link_to 'Menu', root_path %>
+  </h3>
+  <h3 class="btn btn-green">
+      <%= link_to 'Remove cocktail', cocktail_path(@cocktail), method: :delete %>
+  </h3>
